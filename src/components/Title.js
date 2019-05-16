@@ -1,1 +1,14 @@
-const Title = props => <h1>{props.title}</h1>
+import React from 'react';
+
+const Title = (props) => {
+  return (
+    <React.Fragment>
+      <h1>{props.title}</h1>
+      <p>
+        Number of tasks left:
+        {props.tasksLeft}
+      </p>
+    </React.Fragment>
+  );
+};
+export default Title;

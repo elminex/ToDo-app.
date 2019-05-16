@@ -1487,6 +1487,14 @@ var uuid_default = /*#__PURE__*/__webpack_require__.n(uuid);
 var containers_App = __webpack_require__(6);
 var App_default = /*#__PURE__*/__webpack_require__.n(containers_App);
 
+// CONCATENATED MODULE: ./src/components/Title.js
+
+
+var Title_Title = function Title(props) {
+  return react_default.a.createElement(react_default.a.Fragment, null, react_default.a.createElement("h1", null, props.title), react_default.a.createElement("p", null, "Number of tasks left:", props.tasksLeft));
+};
+
+/* harmony default export */ var components_Title = (Title_Title);
 // CONCATENATED MODULE: ./src/containers/App.js
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -1513,6 +1521,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -1562,7 +1571,10 @@ function (_React$Component) {
     value: function render() {
       return react_default.a.createElement("div", {
         className: App_default.a.TodoApp
-      }, "Tutaj pojawi\u0105 si\u0119 komponenty naszej aplikacji");
+      }, react_default.a.createElement(components_Title, {
+        title: "Some awesome title",
+        tasksLeft: this.state.data.length
+      }));
     }
   }]);
 

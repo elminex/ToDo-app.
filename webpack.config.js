@@ -30,8 +30,5 @@ module.exports = (env) => {
         },
       ],
     },
-    optimization: {
-      minimize: false,
-    },
   };
 };

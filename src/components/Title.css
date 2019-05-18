@@ -1,0 +1,9 @@
+.title {
+    color: red;
+    font-size: 3em;
+    margin: none;
+}
+.paragraph {
+    font-size: 1.3em;
+    text-decoration: underline;
+}

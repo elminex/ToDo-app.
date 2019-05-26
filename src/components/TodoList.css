@@ -3,6 +3,7 @@
     padding: 10px;
     margin: 0;
     border: 1px solid black;
+    width: 500px;
 }
 .taskItem {
     display: flex;

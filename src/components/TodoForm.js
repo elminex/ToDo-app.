@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './TodoForm.css';
 
 class TodoForm extends React.Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class TodoForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit.bind(this)}>
+      <form className={style.form} onSubmit={this.handleSubmit.bind(this)}>
         <label htmlFor="task">
           Enter new task:
           <input onChange={this.changeHandle.bind(this)} id="task" type="text" required="true" />

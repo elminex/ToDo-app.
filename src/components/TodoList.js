@@ -4,9 +4,10 @@ import style from './TodoList.css';
 const TodoList = (props) => {
   const list = props.data;
   const remove = props.remove;
-  const items = list.map(item => (
-    <li className={style.taskItem} id={item.id} key={item.id}>
-      {item.text}
+  const show = props.show;
+  const items = list.map((item, index) => (
+    <li className={style.taskItem} id={item.id} key={item.id} >
+      <button onClick={() => show(item.id)}> {index + 1}. {item.text}</button>
       <button onClick={() => remove(item.id)}>&times;</button>
     </li>
   ));

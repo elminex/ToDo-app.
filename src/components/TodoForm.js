@@ -25,13 +25,19 @@ class TodoForm extends React.Component {
 
   render() {
     return (
-      <form className={style.form} onSubmit={this.handleSubmit}>
-        <label className={style.label} htmlFor="task">
-          Enter new task:
+      <div className={style.leftContainer}>
+        <p className={style.paragraph}>
+          Number of tasks left:
+          {this.props.tasksLeft}
+        </p>
+        <form className={style.form} onSubmit={this.handleSubmit}>
+          <label className={style.label} htmlFor="task">
+            Enter new task:
           <input onChange={this.changeHandle} id="task" type="text" required value={this.state.newTask} />
-        </label>
-        <button type="submit">Add task</button>
-      </form>
+          </label>
+          <button className={style.btn} type="submit">Add task</button>
+        </form>
+      </div>
     );
   }
 }

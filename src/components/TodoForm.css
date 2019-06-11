@@ -1,8 +1,40 @@
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    font-size: 1.1em;
+    text-decoration: underline;
+    margin-top: 0;
+}
+
 .form {
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.label {
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
 }
-.form label {
-    margin-bottom: 10px;
+
+.label input {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.btn {
+    height: 40px;
+}
+@media (min-width: 568px) {
+    .leftContainer {
+        text-align: left;
+        margin-bottom: 0;
+        padding-right: 20px;
+    }
 }

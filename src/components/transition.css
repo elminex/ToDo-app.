@@ -1,0 +1,27 @@
+
+.listAppear {
+    opacity: 0;
+    transform: scale(1)
+}
+
+.listAppear.listAppearActive {
+    opacity: 1; 
+    transform: scale(1.07);
+    transition: transform .3s ease-in, opacity .3s linear;
+    animation: list-in 2s;
+}
+
+.listAppearDone {
+    transform: scale(1);
+    transition: transform .3s ease-in;
+}
+
+.listExit {
+    opacity: 1;
+}
+
+.listExit.listExitActive {
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all .3s linear;
+}

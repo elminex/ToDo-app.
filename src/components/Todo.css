@@ -1,20 +1,32 @@
 .listItem {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 15px;  
 }
+
 .listItem:last-of-type {
     margin-bottom: 0;
 }
+
 .listContent {
     width: 100%;
     font-size: 1.3rem;
     line-height: 1.5rem;
-    background-color: lightblue;
     outline: none;
     border: none;
     cursor: pointer;
+    word-wrap: break-word;
+    padding: 8px 0;
+    border-radius: 2px;
 }
+
+.important {
+    background-color: #FF644C;
+}
+
+.normal {
+    background-color: #C9E4E7;
+}
+
 .listContent:hover {
-    background-color: red;
-    color: white;
+    background-color: #F7F14C;
 }

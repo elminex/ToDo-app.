@@ -4,8 +4,6 @@
     margin: 0 auto;
     border: 1px solid black;
     width: 100%;
-    max-width: 400px;
-    flex: 2;
 }
 
 .taskItem {
@@ -13,4 +11,10 @@
     justify-content: space-between;
     width: 100%;
     margin-bottom: 10px;
+}
+
+@media (min-width: 568px) {
+    .taskList {
+        width: calc(100% - 235px);
+    }
 }

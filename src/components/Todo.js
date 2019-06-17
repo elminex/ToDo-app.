@@ -8,13 +8,14 @@ class Todo extends React.Component {
   }
 
   clickHandle() {
-    this.props.remove(this.props.id);
+    this.props.hide(this.props.id);
   }
 
   render() {
     return (
       <li className={style.listItem}>
-        <button className={style.listContent} onClick={this.clickHandle}>{this.props.text}</button>
+        <button className={`${style.listContent} ${this.props.important ? style.important : style.normal}`}
+        onClick={this.clickHandle}>{this.props.text}</button>
       </li>
     );
   }

@@ -1,6 +1,6 @@
 # 20.7
 
-A ToDo app created in React with Webpack. It uses react-transition-group for some animations on components.
+A ToDo app created in React with Webpack as part of Kodilla Web Developer Plus Bootcamp. It uses react-transition-group for some animations on components.
 
 ## How to use 
 
